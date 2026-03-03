@@ -19,6 +19,18 @@ Flujo:
 3. Editar `content.xml` e `index.html`
 4. Validar con `./scripts/validate-elpx.sh`
 
+## Regla operativa para formulas
+
+Si la IA escribe formulas matematicas directamente en el contenido:
+
+- usar `\(...\)` para formulas en linea
+- usar `\[...\]` para formulas en bloque
+- no usar `$...$` ni `$$...$$`
+- no envolver las formulas en HTML especial
+- no meter formulas en `<code>`, `<pre>` o `<textarea>`
+
+Esta regla es necesaria para que eXe detecte el patron y renderice la formula con MathJax.
+
 ## Nota
 
 - Esta carpeta hereda los marcadores internos de la plantilla base para que pueda servir como plantilla fuente.

@@ -15,6 +15,18 @@ Esta carpeta es la plantilla fuente que usa el script para generar proyectos `.e
 5. Anadir archivos propios del material en `content/resources/`.
 6. Volver a comprimir el contenido como `.elpx`.
 
+## Regla operativa para formulas
+
+Si la IA escribe formulas matematicas directamente en el contenido:
+
+- usar `\(...\)` para formulas en linea
+- usar `\[...\]` para formulas en bloque
+- no usar `$...$` ni `$$...$$`
+- no envolver las formulas en HTML especial
+- no meter formulas en `<code>`, `<pre>` o `<textarea>`
+
+Esta regla es necesaria para que eXe detecte el patron y renderice la formula con MathJax.
+
 Nota:
 
 - Esta carpeta contiene marcadores internos para que el script pueda reemplazar IDs y titulo.
