@@ -202,6 +202,37 @@ En ese caso, la IA debe:
 - En formatos modernos conviene usar **CDATA** en `htmlView` y `jsonProperties` cuando el contenido contiene HTML o JSON complejo.
 - `odeIdeviceTypeName` debe coincidir con el tipo usado por el iDevice exportado (`text`, `guess`, `interactive-video`, etc.).
 
+### Regla obligatoria de renderizado LaTeX con MathJax
+
+Para que eXeLearning renderice fórmulas matemáticas escritas directamente por la IA dentro del contenido:
+
+- La IA debe escribir el LaTeX como **texto normal dentro del contenido del iDevice**.
+- Debe usar exclusivamente estos delimitadores:
+  - `\(...\)` para fórmulas en línea.
+  - `\[...\]` para fórmulas en bloque.
+- No debe usar `$...$` ni `$$...$$`, aunque otros motores los admitan.
+- No debe envolver las fórmulas en HTML especial (`<span>`, `<math>`, `<script>`, etc.).
+- No debe dejar fórmulas sin delimitadores, porque eXe no lanzará el renderizado correctamente.
+- No debe partir los delimitadores ni el contenido matemático con etiquetas HTML intermedias.
+- No debe colocar fórmulas dentro de bloques de código o zonas literales (`<code>`, `<pre>`, `<textarea>`), porque eso puede impedir su procesado.
+
+Regla operativa para la IA:
+
+- Si la fórmula va integrada en una frase, usar `\(...\)`.
+- Si la fórmula debe mostrarse destacada en una línea aparte, usar `\[...\]`.
+
+Ejemplos válidos:
+
+- `La aceleración es \(a=\frac{\Delta v}{\Delta t}\).`
+- `\[\frac{-b\pm\sqrt{b^2-4ac}}{2a}\]`
+
+Ejemplos no válidos:
+
+- `$a=\frac{\Delta v}{\Delta t}$`
+- `$$\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$`
+- `<code>\(x^2\)</code>`
+- `x^2+1`
+
 ### Regla obligatoria de sincronización (iDevice `text`)
 
 Para evitar discrepancias entre el editor de eXe y la vista previa/exportación:
