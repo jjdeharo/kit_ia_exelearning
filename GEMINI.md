@@ -20,15 +20,15 @@ El proyecto se basa en la manipulación de archivos ZIP (formato `.elpx`), XML (
 ### Gestión de Proyectos (`elpx-tool.sh`)
 - **Crear un nuevo proyecto**:
   ```bash
-  ./scripts/elpx-tool.sh create ./mi_proyecto "Título del Proyecto"
+  ./scripts/elpx-tool.sh create ./trabajos/titulo_proyecto/editable "Título del Proyecto"
   ```
 - **Empaquetar un directorio a .elpx**:
   ```bash
-  ./scripts/elpx-tool.sh pack ./mi_proyecto ./mi_proyecto.elpx
+  ./scripts/elpx-tool.sh pack ./trabajos/titulo_proyecto/editable ./trabajos/titulo_proyecto/titulo_proyecto.elpx
   ```
 - **Descomprimir un .elpx para edición**:
   ```bash
-  ./scripts/elpx-tool.sh unpack ./material.elpx ./directorio_destino
+  ./scripts/elpx-tool.sh unpack ./trabajos/titulo_proyecto/titulo_proyecto.elpx ./trabajos/titulo_proyecto/editable
   ```
 
 ### Edición e Inserción de Contenido
@@ -64,10 +64,15 @@ El proyecto se basa en la manipulación de archivos ZIP (formato `.elpx`), XML (
 0. **Preflight Obligatorio de Entorno**: Antes de trabajar, ejecutar `./scripts/preflight-kit.sh`. Si faltan dependencias, intentar `--install` cuando sea posible; si no, informar al usuario con lista concreta.
 1. **Prioridad de Referencias**: Usar primero `curated`, luego `real` y finalmente `generated`.
 2. **Política de Temas**: Mantener el tema de la plantilla original o usar `base` por defecto.
-3. **Estructura Interna**: Respetar estrictamente la ruta `content/resources/` para assets y `idevices/<tipo>/` para motores de juego/actividades.
-4. **Validación Obligatoria**: Siempre ejecutar `validate-elpx.sh` tras modificar `content.xml` o `index.html`. Usar `checklist_validacion_elpx.md` como guía técnica y `checklist_rea_calidad.md` como guía de calidad pedagógica REA.
-5. **Trabajo por Fases (Preferente)**: Primero fase de esqueleto (indice/paginas/iDevices base), mostrar ese indice al usuario, y despues completar en bloques incrementales; no rellenar todo de golpe salvo encargo simple.
-6. **Paginación Docente**: La estructura multipágina es preferente, pero se admite recurso de una sola página si el docente lo solicita y se mantiene calidad didáctica.
+3. **Estructura de Salida (Obligatoria por Defecto)**: Guardar cada recurso en `trabajos/<titulo_slug>/` y dentro dejar exactamente:
+   - `<titulo_slug>.elpx` (entrega final)
+   - `editable/` (carpeta con `index.html`, `html/`, `content/`, `libs/`, `theme/`, `idevices/`, `content.xml`)
+   - No crear `entrega/` ni carpetas intermedias, salvo petición explícita del usuario.
+4. **Estructura Interna**: Respetar estrictamente la ruta `content/resources/` para assets y `idevices/<tipo>/` para motores de juego/actividades.
+5. **Validación Obligatoria**: Siempre ejecutar `validate-elpx.sh` tras modificar `content.xml` o `index.html`. Usar `checklist_validacion_elpx.md` como guía técnica y `checklist_rea_calidad.md` como guía de calidad pedagógica REA.
+6. **Trabajo por Fases (Preferente y por Defecto)**: Si el usuario no indica modo, aplicar fases. Primero fase de esqueleto (indice/paginas/iDevices base), mostrar ese indice al usuario y esperar aprobacion.
+7. **Checkpoint por Unidad**: Al cerrar cada unidad (indice, tema, capitulo o bloque), pedir revision del usuario abriendo `index.html` antes de continuar con la siguiente.
+8. **Paginación Docente**: La estructura multipágina es preferente, pero se admite recurso de una sola página si el docente lo solicita y se mantiene calidad didáctica.
 
 ## 📂 Archivos Importantes
 - `README.md`: Resumen rápido de comandos.

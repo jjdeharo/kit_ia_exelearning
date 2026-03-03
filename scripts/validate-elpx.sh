@@ -10,6 +10,7 @@ Uso:
 Valida un paquete .elpx o un directorio ya descomprimido y comprueba:
   - estructura minima
   - referencias locales en HTML
+  - estructura HTML base compatible con eXe
   - presencia basica de content.xml
   - carpetas de idevices usadas
   - estructura didactica minima (no proyecto de un unico iDevice)
@@ -455,6 +456,63 @@ validate_html_refs() {
     rm -f "$refs_file"
 }
 
+validate_html_structure() {
+    local html_file="$1"
+    local page_name
+    local article_count
+    local idevice_count
+    local nav_line
+    local main_line
+
+    page_name="$(basename "$html_file")"
+
+    if ! grep -Eiq '<div[^>]*class="[^"]*exe-content[^"]*"' "$html_file"; then
+        fail "Estructura eXe incompleta en ${page_name}: falta contenedor .exe-content"
+    fi
+
+    if ! grep -Eiq '<main[^>]*class="[^"]*page[^"]*"' "$html_file"; then
+        fail "Estructura eXe incompleta en ${page_name}: falta <main class=\"page\">"
+    fi
+
+    if ! grep -Eiq '<div[^>]*class="[^"]*page-content[^"]*"' "$html_file"; then
+        fail "Estructura eXe incompleta en ${page_name}: falta contenedor .page-content"
+    fi
+
+    if grep -Eiq '<header[^>]*id="header"[^>]*class="[^"]*main-header[^"]*"' "$html_file"; then
+        fail "Estructura eXe no compatible en ${page_name}: se detecta <header id=\"header\" class=\"main-header\"> global antes del contenido"
+    fi
+
+    nav_line="$(grep -Enim1 '<nav[^>]*id="siteNav"' "$html_file" | cut -d: -f1 || true)"
+    main_line="$(grep -Enim1 '<main\b' "$html_file" | cut -d: -f1 || true)"
+    if [[ -n "$nav_line" && -n "$main_line" && "$nav_line" -gt "$main_line" ]]; then
+        fail "Estructura eXe no compatible en ${page_name}: <nav id=\"siteNav\"> debe ir antes de <main>"
+    fi
+
+    article_count="$(grep -Eoi '<article\b[^>]*class="[^"]*box[^"]*"' "$html_file" | wc -l | tr -d ' ' || true)"
+    [[ -z "$article_count" ]] && article_count=0
+    if [[ "$article_count" -lt 1 ]]; then
+        fail "Estructura eXe incompleta en ${page_name}: no hay <article class=\"box\">"
+    fi
+
+    if ! grep -Eiq '<div[^>]*class="[^"]*box-content[^"]*"' "$html_file"; then
+        fail "Estructura eXe incompleta en ${page_name}: falta .box-content"
+    fi
+
+    idevice_count="$(grep -Eoi 'class="[^"]*idevice_node[^"]*"' "$html_file" | wc -l | tr -d ' ' || true)"
+    [[ -z "$idevice_count" ]] && idevice_count=0
+    if [[ "$idevice_count" -lt 1 ]]; then
+        fail "Estructura eXe incompleta en ${page_name}: no hay nodos .idevice_node"
+    fi
+
+    if [[ "$article_count" -ge 1 && "$idevice_count" -ge 1 ]]; then
+        ok "Estructura HTML eXe valida en ${page_name}: ${article_count} bloque(s), ${idevice_count} iDevice(s)"
+    fi
+
+    if ! grep -Eiq 'class="[^"]*package-title[^"]*"' "$html_file"; then
+        warn "No se ha detectado .package-title en ${page_name}: el titulo general del recurso podria no mostrarse"
+    fi
+}
+
 prepare_root() {
     local input_path="$1"
     local abs_input
@@ -519,12 +577,18 @@ main() {
 
     local html_list
     html_list="$(mktemp)"
-    find "$ROOT_DIR" -type f \( -name '*.html' -o -name '*.xhtml' \) | sort > "$html_list"
+    {
+        [[ -f "${ROOT_DIR}/index.html" ]] && printf '%s\n' "${ROOT_DIR}/index.html"
+        if [[ -d "${ROOT_DIR}/html" ]]; then
+            find "${ROOT_DIR}/html" -maxdepth 1 -type f \( -name '*.html' -o -name '*.xhtml' \) | sort
+        fi
+    } > "$html_list"
 
     if [[ ! -s "$html_list" ]]; then
         fail "No se han encontrado archivos HTML para validar"
     else
         while IFS= read -r html_file; do
+            validate_html_structure "$html_file"
             validate_html_refs "$html_file"
         done < "$html_list"
     fi

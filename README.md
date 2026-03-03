@@ -4,6 +4,7 @@ Este repo ya incluye:
 
 - guias corregidas para entender `.elpx`
 - una plantilla minima reutilizable con tema `base`
+- plantillas reales exportadas desde eXe para temas `flux`, `neo`, `nova`, `universal` y `zen`
 - una plantilla avanzada con recursos de varios iDevices frecuentes
 - una herramienta sencilla para crear, abrir y volver a empaquetar proyectos
 - un validador rapido para comprobar si un `.elpx` esta bien formado a nivel practico
@@ -16,6 +17,25 @@ Este repo ya incluye:
 - una herramienta para insertar esos bloques en `content.xml` e `index.html`
 - una carpeta fija `trabajos/` para centralizar los `.elpx` reales de cada sesion
 
+## Que hace el usuario
+
+El usuario no tiene que montar el `.elpx` a mano. Su accion principal es pedirle a la IA el recurso que necesita.
+Si no indica modo de trabajo, la IA debe usar por defecto el modo por fases.
+
+Modo 1 (preferente): trabajo por fases con aprobacion de indice.
+
+```text
+Crea un REA de [tema] para [nivel]. Trabaja por fases: primero propon indice y estructura, espera mi aprobacion, y despues completa el contenido por bloques.
+```
+
+Modo 2: ejecucion completa sin confirmaciones intermedias.
+
+```text
+Crea un REA de [tema] para [nivel] y hazlo de una sola vez, sin confirmaciones intermedias. Entrega el .elpx validado.
+```
+
+A partir de esa peticion, la IA debe ejecutar el flujo del kit (preflight, estructura, contenido por fases, validacion y empaquetado).
+
 ## Carpeta de trabajo
 
 La carpeta recomendada para los materiales reales esta en:
@@ -26,23 +46,45 @@ Su objetivo es centralizar:
 
 - los `.elpx` originales que entregue el docente
 - los `.elpx` modificados o generados por la IA
-- los directorios temporales descomprimidos para editar
+- los directorios descomprimidos para editar
 
 Conviene que cualquier IA que entre en este repo use `trabajos/` como ubicacion por defecto para el flujo real de trabajo.
 Ademas, para evitar mezclar proyectos de sesiones distintas, cada proyecto debe vivir en su propia subcarpeta directa dentro de `trabajos/`.
 
+Estructura de salida por defecto (obligatoria si el usuario no pide otra):
+
+```text
+trabajos/<titulo_proyecto_slug>/
+  <titulo_proyecto_slug>.elpx
+  editable/
+    index.html
+    html/
+    content/
+    libs/
+    theme/
+    idevices/
+    content.xml
+```
+
+Regla operativa:
+
+- la carpeta principal del proyecto debe llamarse con el titulo (normalizado a slug)
+- dentro de esa carpeta debe quedar el `.elpx` final
+- dentro de esa carpeta debe existir `editable/` con todos los archivos web y de edicion
+- no crear carpetas intermedias tipo `entrega/` salvo que el usuario lo pida expresamente
+
 Ejemplo:
 
 ```bash
-mkdir -p ./trabajos/biologia_endosimbiosis_2026-03-02/entrega
-cp /ruta/externa/material.elpx ./trabajos/biologia_endosimbiosis_2026-03-02/entrega/material_original.elpx
+mkdir -p ./trabajos/biologia_endosimbiosis_2026-03-02
+cp /ruta/externa/material.elpx ./trabajos/biologia_endosimbiosis_2026-03-02/biologia_endosimbiosis_2026-03-02.elpx
 ./scripts/elpx-tool.sh unpack \
-  ./trabajos/biologia_endosimbiosis_2026-03-02/entrega/material_original.elpx \
+  ./trabajos/biologia_endosimbiosis_2026-03-02/biologia_endosimbiosis_2026-03-02.elpx \
   ./trabajos/biologia_endosimbiosis_2026-03-02/editable
 ./scripts/validate-elpx.sh ./trabajos/biologia_endosimbiosis_2026-03-02/editable
 ./scripts/elpx-tool.sh pack \
   ./trabajos/biologia_endosimbiosis_2026-03-02/editable \
-  ./trabajos/biologia_endosimbiosis_2026-03-02/entrega/material_modificado.elpx
+  ./trabajos/biologia_endosimbiosis_2026-03-02/biologia_endosimbiosis_2026-03-02.elpx
 ```
 
 ## Flujo recomendado
@@ -80,14 +122,37 @@ Para generar productos docentes utiles (no demos tecnicas), cualquier IA que tra
 ### Crear un proyecto nuevo
 
 ```bash
-./scripts/elpx-tool.sh create ./mi_proyecto "Mi titulo"
+./scripts/elpx-tool.sh create ./trabajos/mi_titulo/editable "Mi titulo"
+```
+
+Ver los temas disponibles:
+
+```bash
+./scripts/elpx-tool.sh list-themes
+```
+
+Crear usando una plantilla real de tema:
+
+```bash
+./scripts/elpx-tool.sh create --theme universal ./trabajos/mi_titulo/editable "Mi titulo"
 ```
 
 Si quieres crearlo y empaquetarlo en un solo paso:
 
 ```bash
-./scripts/elpx-tool.sh create ./mi_proyecto "Mi titulo" ./mi_proyecto.elpx
+./scripts/elpx-tool.sh create \
+  --theme universal \
+  ./trabajos/mi_titulo/editable \
+  "Mi titulo" \
+  ./trabajos/mi_titulo/mi_titulo.elpx
 ```
+
+Notas:
+
+- si no se indica `--theme`, el valor por defecto sigue siendo `base`
+- los temas `flux`, `neo`, `nova`, `universal` y `zen` parten ahora de exportaciones vacias reales de eXe
+- esas plantillas de tema son esqueletos tecnicos fieles al estilo; hasta que no se anadan iDevices, no superan la validacion didactica minima del repo
+- el fichero externo `base.elpx` aportado no se usa como plantilla porque declara internamente el tema `universal`; para `base` se mantiene de momento la plantilla base del repo
 
 ### Modificar un `.elpx` existente
 
@@ -129,6 +194,7 @@ Ademas lanza avisos si detecta valores de ejemplo tipicos (`https://example.org`
 Tambien valida que en iDevices `text` no haya desajuste entre `htmlView` y `jsonProperties.textTextarea` (para evitar que el editor muestre menos contenido que la vista previa).
 Tambien valida que `jsonProperties.textTextarea` mantenga HTML en iDevices `text` para evitar que el editor muestre todo sin formato.
 Tambien valida que las imagenes presentes en `htmlView` aparezcan tambien en `textTextarea` para que se vean tanto en editor como en vista previa.
+Tambien valida la estructura HTML base de eXe (`.exe-content`, `main.page`, `article.box`, `.box-content`, `.idevice_node`) para evitar maquetaciones rotas.
 Tambien fuerza compatibilidad de editor en iDevices `text`: evita imagenes `SVG` y exige formatos raster (`PNG/JPG/WebP`) en `textTextarea`.
 Tambien fuerza rutas de imagen compatibles con editor en iDevices `text`: en `textTextarea` exige `{{context_path}}/<carpeta>/<archivo>` en lugar de `content/resources/...` directo.
 Tambien valida formato de atribucion en imagenes (estructura eXe con `figcaption` y campos `author`, `title` con URL de origen y `license` con enlace).
@@ -142,8 +208,10 @@ La IA debe preferir este metodo para materiales medianos o largos:
 1. fase de esqueleto: proponer e implementar indice inicial (paginas + iDevices base)
 2. validar estructura tecnica minima
 3. mostrar al usuario ese indice antes de pasar a la fase de contenido
-4. fase de relleno incremental: completar por partes (pagina a pagina o bloque a bloque), no todo de golpe
-5. validar al final de cada bloque importante y en la entrega final
+4. pedir al usuario revision abriendo `index.html` y esperar aprobacion para continuar
+5. fase de relleno incremental: completar por partes (tema/capitulo/bloque), no todo de golpe
+6. al terminar cada unidad, pedir revision de nuevo abriendo `index.html` antes de seguir con la siguiente
+7. validar al final de cada bloque importante y en la entrega final
 
 ### Validacion pedagogica REA (obligatoria para entrega docente)
 

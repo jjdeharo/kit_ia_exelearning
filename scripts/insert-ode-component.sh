@@ -191,12 +191,22 @@ for item in pag_structures.findall("ode:odePagStructure", ns):
 next_order = max(existing_orders or [0]) + 1
 
 stamp = datetime.now().strftime("%Y%m%d%H%M%S")
+
+# IDs must be globally unique within content.xml (not only within a page).
+all_block_ids = {clean_text(el.text) for el in content_root.findall(".//ode:odeBlockId", ns) if clean_text(el.text)}
+all_idevice_ids = {clean_text(el.text) for el in content_root.findall(".//ode:odeIdeviceId", ns) if clean_text(el.text)}
+
 component_block_id = f"{stamp}BLK{next_order:03d}"
-while component_block_id in existing_block_ids:
-    next_order += 1
-    component_block_id = f"{stamp}BLK{next_order:03d}"
 component_idevice_id = f"{stamp}IDEV{next_order:03d}"
 evaluation_id = os.environ.get("EVALUATION_ID", f"{stamp}EVAL{next_order:03d}")
+
+suffix = 0
+while component_block_id in all_block_ids or component_idevice_id in all_idevice_ids:
+    suffix += 1
+    component_block_id = f"{stamp}BLK{next_order:03d}{suffix:02d}"
+    component_idevice_id = f"{stamp}IDEV{next_order:03d}{suffix:02d}"
+    if "EVALUATION_ID" not in os.environ:
+        evaluation_id = f"{stamp}EVAL{next_order:03d}{suffix:02d}"
 
 old_page_id = (component_root.findtext(q("odePageId")) or "").strip()
 old_block_id = (component_root.findtext(q("odeBlockId")) or "").strip()
@@ -287,13 +297,19 @@ html_dir = project_dir / "html"
 if html_dir.is_dir():
     candidate_files.extend(sorted(html_dir.glob("*.html")))
 
-main_marker = f'id="{page_id}"'
+# Depending on eXe export version/theme, the page id can appear as:
+# - id="<odePageId>"
+# - id="page-content-<odePageId>"
+main_markers = [
+    f'id="{page_id}"',
+    f'id="page-content-{page_id}"',
+]
 for candidate in candidate_files:
     try:
         candidate_text = candidate.read_text(encoding="utf-8")
     except OSError:
         continue
-    if main_marker in candidate_text:
+    if any(marker in candidate_text for marker in main_markers):
         target_html = candidate
         break
 
