@@ -12,6 +12,7 @@ Este repo ya incluye:
 - un catalogo generado de todos los iDevices detectados en el clon local de eXe
 - un catalogo de ejemplos reales de `odeComponent` para los iDevices que ya aparecen en los fixtures
 - una capa de referencias `curated` para los iDevices prioritarios mas usados
+- una capa local de fixtures canonicos para iDevices interactivos
 - una biblioteca de snippets `odeComponent` para todos los iDevices (reales o generados)
 - un generador para instanciar snippets `odeComponent` listos para insertar
 - una herramienta para insertar esos bloques en `content.xml` e `index.html`
@@ -35,6 +36,18 @@ Crea un REA de [tema] para [nivel] y hazlo de una sola vez, sin confirmaciones i
 ```
 
 A partir de esa peticion, la IA debe ejecutar el flujo del kit (preflight, estructura, contenido por fases, validacion y empaquetado).
+
+## Regla rapida para formulas
+
+Si la IA escribe formulas matematicas directamente en el contenido para eXeLearning:
+
+- debe escribirlas como texto normal dentro del contenido
+- debe usar `\(...\)` para formulas en linea
+- debe usar `\[...\]` para formulas en bloque
+- no debe usar `$...$` ni `$$...$$`
+- no debe envolver la formula en HTML especial ni meterla en `<code>` o `<pre>`
+
+Esto es lo que permite que eXe detecte el patron y lance el renderizado con MathJax.
 
 ## Carpeta de trabajo
 
@@ -359,6 +372,48 @@ Documentos clave:
 - `referencias/ode_components/`
 - `checklist_validacion_elpx.md`
 - `checklist_rea_calidad.md`
+
+## Fixtures canónicos de iDevices
+
+Las referencias ODE son utiles para insertar bloques, pero no bastan para iDevices complejos si se quiere evitar parches manuales posteriores.
+
+Por eso el repo incorpora una capa separada:
+
+- `fixtures/idevices/`
+- `fixtures/idevices/manifest.json`
+
+Esta carpeta debe usarse como fuente de verdad para iDevices interactivos:
+
+- `crossword`
+- `word-search`
+- `az-quiz-game`
+
+La regla operativa es:
+
+- si existe fixture canonico, clonar ese fixture
+- editar solo campos didacticos visibles
+- no reconstruir `DataGame` ni `jsonProperties` desde cero
+
+Captura de un fixture desde un proyecto real o un `.elpx`:
+
+```bash
+./scripts/capture-idevice-fixture.sh ./referencias/ode_components_curated/crossword.xml crossword
+./scripts/capture-idevice-fixture.sh ./mi_recurso.elpx az-quiz-game canonico
+```
+
+Eso deja:
+
+- `component.xml`
+- `htmlView.html`
+- `jsonProperties.json`
+- `metadata.json`
+- `page.html` (si se encuentra la pagina fuente)
+
+Prioridad recomendada para generar un iDevice:
+
+1. `fixtures/idevices/`
+2. `referencias/ode_components_curated/`
+3. `referencias/ode_components/`
 
 ## Generar un `odeComponent` listo para insertar
 

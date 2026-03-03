@@ -73,6 +73,7 @@ El proyecto se basa en la manipulación de archivos ZIP (formato `.elpx`), XML (
 6. **Trabajo por Fases (Preferente y por Defecto)**: Si el usuario no indica modo, aplicar fases. Primero fase de esqueleto (indice/paginas/iDevices base), mostrar ese indice al usuario y esperar aprobacion.
 7. **Checkpoint por Unidad**: Al cerrar cada unidad (indice, tema, capitulo o bloque), pedir revision del usuario abriendo `index.html` antes de continuar con la siguiente.
 8. **Paginación Docente**: La estructura multipágina es preferente, pero se admite recurso de una sola página si el docente lo solicita y se mantiene calidad didáctica.
+9. **Fórmulas Matemáticas**: Si la IA escribe LaTeX directamente en el contenido, debe usar `\(...\)` para inline y `\[...\]` para bloque. No usar `$...$` ni `$$...$$`, no envolver en HTML especial y no colocar fórmulas en `<code>` o `<pre>`, para que eXe dispare correctamente el renderizado con MathJax.
 
 ## 📂 Archivos Importantes
 - `README.md`: Resumen rápido de comandos.
