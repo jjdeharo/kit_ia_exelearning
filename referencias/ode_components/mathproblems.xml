@@ -1,0 +1,27 @@
+<odeComponent>
+  <odePageId>__PAGE_ID__</odePageId>
+  <odeBlockId>__BLOCK_ID__</odeBlockId>
+  <odeIdeviceId>__IDEVICE_ID__</odeIdeviceId>
+  <odeIdeviceTypeName>mathproblems</odeIdeviceTypeName>
+  <htmlView>&lt;div class="mathproblems-IDevice"&gt;&lt;div class="game-evaluation-ids js-hidden" data-id="__IDEVICE_ID__" data-evaluationb="false" data-evaluationid="__EVALUATION_ID__"&gt;&lt;/div&gt;&lt;div class="mathproblems-feedback-game js-hidden"&gt;&lt;/div&gt;&lt;div class="mathproblems-instructions mathproblems-instructions"&gt;&lt;p&gt;Resuelva los problemas matematicos propuestos.&lt;/p&gt;&lt;/div&gt;&lt;div class="mathproblems-DataGame js-hidden"&gt;__DATA_GAME__&lt;/div&gt;&lt;div class="mathproblems-bns js-hidden"&gt;Su navegador no es compatible con esta actividad.&lt;/div&gt;&lt;/div&gt;</htmlView>
+  <jsonProperties>{"ideviceId":"__IDEVICE_ID__","textInfoDurationInput":"","textInfoParticipantsInput":"","textInfoDurationTextInput":"","textInfoParticipantsTextInput":"","textTextarea":"&lt;div class=\"mathproblems-IDevice\"&gt;...&lt;/div&gt;","textFeedbackInput":"","textFeedbackTextarea":""}</jsonProperties>
+  <odeComponentsOrder>1</odeComponentsOrder>
+  <odeComponentsProperties>
+    <odeComponentsProperty>
+      <key>visibility</key>
+      <value>true</value>
+    </odeComponentsProperty>
+    <odeComponentsProperty>
+      <key>teacherOnly</key>
+      <value>false</value>
+    </odeComponentsProperty>
+    <odeComponentsProperty>
+      <key>identifier</key>
+      <value/>
+    </odeComponentsProperty>
+    <odeComponentsProperty>
+      <key>cssClass</key>
+      <value/>
+    </odeComponentsProperty>
+  </odeComponentsProperties>
+</odeComponent>

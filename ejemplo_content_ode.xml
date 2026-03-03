@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ode SYSTEM "content.dtd">
+<ode xmlns="http://www.intef.es/xsd/ode" version="2.0">
+  <userPreferences>
+    <userPreference>
+      <key>theme</key>
+      <value>base</value>
+    </userPreference>
+  </userPreferences>
+
+  <odeResources>
+    <odeResource>
+      <key>odeId</key>
+      <value>20260302100000AUTOIA</value>
+    </odeResource>
+    <odeResource>
+      <key>odeVersionId</key>
+      <value>20260302100005REV001</value>
+    </odeResource>
+    <odeResource>
+      <key>exe_version</key>
+      <value>4.x</value>
+    </odeResource>
+  </odeResources>
+
+  <odeProperties>
+    <odeProperty>
+      <key>pp_title</key>
+      <value>Ejemplo de Estructura ODE 2.0 para IA</value>
+    </odeProperty>
+    <odeProperty>
+      <key>pp_author</key>
+      <value>Assistant IA</value>
+    </odeProperty>
+    <odeProperty>
+      <key>pp_lang</key>
+      <value>es</value>
+    </odeProperty>
+    <odeProperty>
+      <key>license</key>
+      <value>creative commons: attribution - share alike 4.0</value>
+    </odeProperty>
+    <odeProperty>
+      <key>pp_addPagination</key>
+      <value>true</value>
+    </odeProperty>
+    <odeProperty>
+      <key>pp_addSearchBox</key>
+      <value>false</value>
+    </odeProperty>
+  </odeProperties>
+
+  <odeNavStructures>
+    <odeNavStructure>
+      <odePageId>20260302PAGE001</odePageId>
+      <odeParentPageId></odeParentPageId>
+      <pageName>Introducción</pageName>
+      <odeNavStructureOrder>1</odeNavStructureOrder>
+
+      <odeNavStructureProperties>
+        <odeNavStructureProperty>
+          <key>titlePage</key>
+          <value>Introducción al Curso</value>
+        </odeNavStructureProperty>
+        <odeNavStructureProperty>
+          <key>visibility</key>
+          <value>true</value>
+        </odeNavStructureProperty>
+      </odeNavStructureProperties>
+
+      <odePagStructures>
+        <odePagStructure>
+          <odePageId>20260302PAGE001</odePageId>
+          <odeBlockId>20260302BLK001</odeBlockId>
+          <blockName>Bloque de Bienvenida</blockName>
+          <iconName></iconName>
+          <odePagStructureOrder>1</odePagStructureOrder>
+
+          <odePagStructureProperties>
+            <odePagStructureProperty>
+              <key>visibility</key>
+              <value>true</value>
+            </odePagStructureProperty>
+            <odePagStructureProperty>
+              <key>teacherOnly</key>
+              <value>false</value>
+            </odePagStructureProperty>
+            <odePagStructureProperty>
+              <key>allowToggle</key>
+              <value>true</value>
+            </odePagStructureProperty>
+            <odePagStructureProperty>
+              <key>minimized</key>
+              <value>false</value>
+            </odePagStructureProperty>
+          </odePagStructureProperties>
+
+          <odeComponents>
+            <odeComponent>
+              <odePageId>20260302PAGE001</odePageId>
+              <odeBlockId>20260302BLK001</odeBlockId>
+              <odeIdeviceId>20260302IDEV001</odeIdeviceId>
+              <odeIdeviceTypeName>text</odeIdeviceTypeName>
+              <htmlView><![CDATA[<div class="exe-text-template"><div class="textIdeviceContent"><div class="exe-text-activity"><div><p>Bienvenidos a este contenido generado por una IA para eXe 4+.</p><p class="clearfix"></p></div></div></div></div>]]></htmlView>
+              <jsonProperties><![CDATA[{"ideviceId":"20260302IDEV001","textInfoDurationInput":"","textInfoDurationTextInput":"Duración","textInfoParticipantsInput":"","textInfoParticipantsTextInput":"Agrupamiento","textTextarea":"<p>Bienvenidos a este contenido generado por una IA para eXe 4+.</p>","textFeedbackInput":"Show Feedback","textFeedbackTextarea":""}]]></jsonProperties>
+              <odeComponentsOrder>1</odeComponentsOrder>
+              <odeComponentsProperties>
+                <odeComponentsProperty>
+                  <key>visibility</key>
+                  <value>true</value>
+                </odeComponentsProperty>
+                <odeComponentsProperty>
+                  <key>teacherOnly</key>
+                  <value>false</value>
+                </odeComponentsProperty>
+              </odeComponentsProperties>
+            </odeComponent>
+          </odeComponents>
+        </odePagStructure>
+      </odePagStructures>
+    </odeNavStructure>
+  </odeNavStructures>
+</ode>

@@ -1,0 +1,27 @@
+<odeComponent>
+  <odePageId>__PAGE_ID__</odePageId>
+  <odeBlockId>__BLOCK_ID__</odeBlockId>
+  <odeIdeviceId>__IDEVICE_ID__</odeIdeviceId>
+  <odeIdeviceTypeName>map</odeIdeviceTypeName>
+  <htmlView>&lt;div class="mapa-IDevice"&gt;&lt;div class="mapa-version js-hidden"&gt;2&lt;/div&gt;&lt;div class="mapa-feedback-game"&gt;&lt;/div&gt;&lt;div class="mapa-instructions gameQP-instructions"&gt;&lt;p&gt;Explore el mapa y pulse sobre los puntos activos.&lt;/p&gt;&lt;/div&gt;&lt;div class="mapa-DataGame js-hidden"&gt;{"map":{"image":"content/resources/mapa-base.png","pts":[]}}&lt;/div&gt;&lt;div class="mapa-bns js-hidden"&gt;Su navegador no es compatible con esta actividad.&lt;/div&gt;&lt;/div&gt;</htmlView>
+  <jsonProperties>{"ideviceId":"__IDEVICE_ID__","textInfoDurationInput":"","textInfoParticipantsInput":"","textInfoDurationTextInput":"","textInfoParticipantsTextInput":"","textTextarea":"&lt;div class=\"mapa-IDevice\"&gt;...&lt;/div&gt;","textFeedbackInput":"","textFeedbackTextarea":""}</jsonProperties>
+  <odeComponentsOrder>1</odeComponentsOrder>
+  <odeComponentsProperties>
+    <odeComponentsProperty>
+      <key>visibility</key>
+      <value>true</value>
+    </odeComponentsProperty>
+    <odeComponentsProperty>
+      <key>teacherOnly</key>
+      <value>false</value>
+    </odeComponentsProperty>
+    <odeComponentsProperty>
+      <key>identifier</key>
+      <value/>
+    </odeComponentsProperty>
+    <odeComponentsProperty>
+      <key>cssClass</key>
+      <value/>
+    </odeComponentsProperty>
+  </odeComponentsProperties>
+</odeComponent>

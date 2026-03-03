@@ -1,0 +1,27 @@
+<odeComponent>
+  <odePageId>__PAGE_ID__</odePageId>
+  <odeBlockId>__BLOCK_ID__</odeBlockId>
+  <odeIdeviceId>__IDEVICE_ID__</odeIdeviceId>
+  <odeIdeviceTypeName>external-website</odeIdeviceTypeName>
+  <htmlView>&lt;div id="iframeWebsiteIdevice"&gt;&lt;iframe src="https://example.org" title="Sitio web externo" loading="lazy"&gt;&lt;/iframe&gt;&lt;div class="iframe-error-message" style="display:none"&gt;&lt;p&gt;No se puede mostrar este sitio en un iframe con el protocolo actual.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</htmlView>
+  <jsonProperties>{"ideviceId":"__IDEVICE_ID__","url":"https://example.org","title":"Sitio web externo","height":"600"}</jsonProperties>
+  <odeComponentsOrder>1</odeComponentsOrder>
+  <odeComponentsProperties>
+    <odeComponentsProperty>
+      <key>visibility</key>
+      <value>true</value>
+    </odeComponentsProperty>
+    <odeComponentsProperty>
+      <key>teacherOnly</key>
+      <value>false</value>
+    </odeComponentsProperty>
+    <odeComponentsProperty>
+      <key>identifier</key>
+      <value/>
+    </odeComponentsProperty>
+    <odeComponentsProperty>
+      <key>cssClass</key>
+      <value/>
+    </odeComponentsProperty>
+  </odeComponentsProperties>
+</odeComponent>

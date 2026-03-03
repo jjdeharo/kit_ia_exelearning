@@ -1,0 +1,27 @@
+<odeComponent>
+  <odePageId>__PAGE_ID__</odePageId>
+  <odeBlockId>__BLOCK_ID__</odeBlockId>
+  <odeIdeviceId>__IDEVICE_ID__</odeIdeviceId>
+  <odeIdeviceTypeName>casestudy</odeIdeviceTypeName>
+  <htmlView>&lt;div class="exe-casestudy-container"&gt;&lt;div class="caseStudyContent"&gt;&lt;div class="CSP-Info mb-3"&gt;&lt;dl&gt;&lt;div class="inline"&gt;&lt;dt&gt;Duracion&lt;/dt&gt;&lt;dd&gt;45 min&lt;/dd&gt;&lt;/div&gt;&lt;div class="inline"&gt;&lt;dt&gt;Agrupamiento&lt;/dt&gt;&lt;dd&gt;Parejas&lt;/dd&gt;&lt;/div&gt;&lt;/dl&gt;&lt;/div&gt;&lt;div class="CSP-History mb-3"&gt;&lt;p&gt;Descripcion breve del caso de estudio.&lt;/p&gt;&lt;/div&gt;&lt;div class="CSP-Activities mb-3"&gt;&lt;div class="CSP-ActivityDiv"&gt;&lt;div class="CSP-Activity mb-3"&gt;&lt;p&gt;Analice la situacion y proponga una respuesta.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</htmlView>
+  <jsonProperties>{"ideviceId":"__IDEVICE_ID__","durationValue":"45 min","durationText":"Duracion","participantsValue":"Parejas","participantsText":"Agrupamiento","story":"<p>Descripcion breve del caso de estudio.</p>","activities":[{"activity":"<p>Analice la situacion y proponga una respuesta.</p>","buttonText":"Mostrar feedback","feedback":"<p>Retroalimentacion del caso.</p>"}]}</jsonProperties>
+  <odeComponentsOrder>1</odeComponentsOrder>
+  <odeComponentsProperties>
+    <odeComponentsProperty>
+      <key>visibility</key>
+      <value>true</value>
+    </odeComponentsProperty>
+    <odeComponentsProperty>
+      <key>teacherOnly</key>
+      <value>false</value>
+    </odeComponentsProperty>
+    <odeComponentsProperty>
+      <key>identifier</key>
+      <value/>
+    </odeComponentsProperty>
+    <odeComponentsProperty>
+      <key>cssClass</key>
+      <value/>
+    </odeComponentsProperty>
+  </odeComponentsProperties>
+</odeComponent>

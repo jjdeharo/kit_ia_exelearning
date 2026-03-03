@@ -1,0 +1,27 @@
+<odeComponent>
+  <odePageId>__PAGE_ID__</odePageId>
+  <odeBlockId>__BLOCK_ID__</odeBlockId>
+  <odeIdeviceId>__IDEVICE_ID__</odeIdeviceId>
+  <odeIdeviceTypeName>digcompedu</odeIdeviceTypeName>
+  <htmlView>&lt;div class="digcompeduIdeviceContent"&gt;&lt;div class="digcompedu-summary"&gt;&lt;p&gt;Marco de competencia digital docente con niveles y descriptores.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</htmlView>
+  <jsonProperties>{"ideviceId":"__IDEVICE_ID__","title":"DigCompEdu","areas":[{"name":"Compromiso profesional","level":"B1","description":"Descripcion del nivel."}],"showLegend":true}</jsonProperties>
+  <odeComponentsOrder>1</odeComponentsOrder>
+  <odeComponentsProperties>
+    <odeComponentsProperty>
+      <key>visibility</key>
+      <value>true</value>
+    </odeComponentsProperty>
+    <odeComponentsProperty>
+      <key>teacherOnly</key>
+      <value>false</value>
+    </odeComponentsProperty>
+    <odeComponentsProperty>
+      <key>identifier</key>
+      <value/>
+    </odeComponentsProperty>
+    <odeComponentsProperty>
+      <key>cssClass</key>
+      <value/>
+    </odeComponentsProperty>
+  </odeComponentsProperties>
+</odeComponent>

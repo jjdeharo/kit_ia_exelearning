@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ode SYSTEM "content.dtd">
+<ode xmlns="http://www.intef.es/xsd/ode" version="2.0">
+  <userPreferences>
+    <userPreference>
+      <key>theme</key>
+      <value>base</value>
+    </userPreference>
+  </userPreferences>
+  <odeResources>
+    <odeResource>
+      <key>odeId</key>
+      <value>20260303053548AUTOIA</value>
+    </odeResource>
+    <odeResource>
+      <key>odeVersionId</key>
+      <value>20260303053548REV001</value>
+    </odeResource>
+    <odeResource>
+      <key>exe_version</key>
+      <value>4.x</value>
+    </odeResource>
+  </odeResources>
+  <odeProperties>
+    <odeProperty>
+      <key>pp_title</key>
+      <value>REA: Endosimbiosis seriada (1º Bachillerato)</value>
+    </odeProperty>
+    <odeProperty>
+      <key>pp_lang</key>
+      <value>es</value>
+    </odeProperty>
+    <odeProperty>
+      <key>pp_author</key>
+      <value>Juanjo de Haro</value>
+    </odeProperty>
+    <odeProperty>
+      <key>license</key>
+      <value>creative commons: attribution - share alike 4.0</value>
+    </odeProperty>
+    <odeProperty>
+      <key>pp_addPagination</key>
+      <value>false</value>
+    </odeProperty>
+    <odeProperty>
+      <key>pp_addSearchBox</key>
+      <value>false</value>
+    </odeProperty>
+  </odeProperties>
+  <odeNavStructures>
+
+    <odeNavStructure>
+      <odePageId>20260303053548PAGE01</odePageId>
+      <odeParentPageId></odeParentPageId>
+      <pageName>Portada y guía</pageName>
+      <odeNavStructureOrder>1</odeNavStructureOrder>
+      <odeNavStructureProperties>
+        <odeNavStructureProperty>
+          <key>titlePage</key>
+          <value>Portada y guía</value>
+        </odeNavStructureProperty>
+        <odeNavStructureProperty>
+          <key>visibility</key>
+          <value>true</value>
+        </odeNavStructureProperty>
+      </odeNavStructureProperties>
+      <odePagStructures>
+        <odePagStructure>
+          <odePageId>20260303053548PAGE01</odePageId>
+          <odeBlockId>20260303053548BLK001</odeBlockId>
+          <blockName>Portada y guía</blockName>
+          <iconName></iconName>
+          <odePagStructureOrder>1</odePagStructureOrder>
+          <odePagStructureProperties>
+            <odePagStructureProperty>
+              <key>visibility</key>
+              <value>true</value>
+            </odePagStructureProperty>
+            <odePagStructureProperty>
+              <key>teacherOnly</key>
+              <value>false</value>
+            </odePagStructureProperty>
+            <odePagStructureProperty>
+              <key>allowToggle</key>
+              <value>true</value>
+            </odePagStructureProperty>
+            <odePagStructureProperty>
+              <key>minimized</key>
+              <value>false</value>
+            </odePagStructureProperty>
+          </odePagStructureProperties>
+          <odeComponents>
+            <odeComponent>
+              <odePageId>20260303053548PAGE01</odePageId>
+              <odeBlockId>20260303053548BLK001</odeBlockId>
+              <odeIdeviceId>20260303053548IDEV01</odeIdeviceId>
+              <odeIdeviceTypeName>text</odeIdeviceTypeName>
+              <htmlView><![CDATA[<div class="exe-text-template"><div class="textIdeviceContent"><div class="exe-text-activity"><div><h2>Qué vas a aprender</h2>
+<ul>
+  <li>Explicar la <strong>teoría de la endosimbiosis seriada</strong> y por qué es clave para entender el origen de las células eucariotas.</li>
+  <li>Relacionar <strong>mitocondrias</strong> y <strong>cloroplastos</strong> con bacterias ancestrales.</li>
+  <li>Reconocer evidencias: ADN propio, ribosomas 70S, doble membrana y fisión binaria.</li>
+</ul>
+
+<h2>Nivel y contexto</h2>
+<p><strong>Nivel:</strong> 1º de Bachillerato (Biología y Geología).</p>
+<p><strong>Duración orientativa:</strong> 2 sesiones de 55 minutos.</p>
+
+<h2>Producto final</h2>
+<p>Un <strong>mapa conceptual</strong> (o infografía) que responda: <em>¿Cómo se originaron mitocondrias y cloroplastos y qué pruebas lo apoyan?</em></p>
+
+<h2>Guía docente</h2>
+<ol>
+  <li>Activación: pregunta inicial y lluvia de ideas (5-10 min).</li>
+  <li>Teoría guiada con esquema y evidencias (25-30 min).</li>
+  <li>Actividad: mapa conceptual + puesta en común (15-20 min).</li>
+</ol>
+<p><strong>Atención a la diversidad:</strong> ofrecer plantilla de mapa conceptual, glosario y opción de respuesta oral o visual.</p>
+<p class="clearfix"></p></div></div></div></div>]]></htmlView>
+              <jsonProperties><![CDATA[{"ideviceId":"20260303053548IDEV01","textInfoDurationInput":"","textInfoDurationTextInput":"Duración","textInfoParticipantsInput":"","textInfoParticipantsTextInput":"Agrupamiento","textTextarea":"<h2>Qué vas a aprender</h2>\n<ul>\n  <li>Explicar la <strong>teoría de la endosimbiosis seriada</strong> y por qué es clave para entender el origen de las células eucariotas.</li>\n  <li>Relacionar <strong>mitocondrias</strong> y <strong>cloroplastos</strong> con bacterias ancestrales.</li>\n  <li>Reconocer evidencias: ADN propio, ribosomas 70S, doble membrana y fisión binaria.</li>\n</ul>\n\n<h2>Nivel y contexto</h2>\n<p><strong>Nivel:</strong> 1º de Bachillerato (Biología y Geología).</p>\n<p><strong>Duración orientativa:</strong> 2 sesiones de 55 minutos.</p>\n\n<h2>Producto final</h2>\n<p>Un <strong>mapa conceptual</strong> (o infografía) que responda: <em>¿Cómo se originaron mitocondrias y cloroplastos y qué pruebas lo apoyan?</em></p>\n\n<h2>Guía docente</h2>\n<ol>\n  <li>Activación: pregunta inicial y lluvia de ideas (5-10 min).</li>\n  <li>Teoría guiada con esquema y evidencias (25-30 min).</li>\n  <li>Actividad: mapa conceptual + puesta en común (15-20 min).</li>\n</ol>\n<p><strong>Atención a la diversidad:</strong> ofrecer plantilla de mapa conceptual, glosario y opción de respuesta oral o visual.</p>","textFeedbackInput":"Show Feedback","textFeedbackTextarea":""}]]></jsonProperties>
+              <odeComponentsOrder>1</odeComponentsOrder>
+              <odeComponentsProperties>
+                <odeComponentsProperty>
+                  <key>visibility</key>
+                  <value>true</value>
+                </odeComponentsProperty>
+                <odeComponentsProperty>
+                  <key>teacherOnly</key>
+                  <value>false</value>
+                </odeComponentsProperty>
+              </odeComponentsProperties>
+            </odeComponent>
+          </odeComponents>
+        </odePagStructure>
+      </odePagStructures>
+    </odeNavStructure>
+
+    <odeNavStructure>
+      <odePageId>20260303053548PAGE02</odePageId>
+      <odeParentPageId></odeParentPageId>
+      <pageName>Teoría: endosimbiosis seriada</pageName>
+      <odeNavStructureOrder>2</odeNavStructureOrder>
+      <odeNavStructureProperties>
+        <odeNavStructureProperty>
+          <key>titlePage</key>
+          <value>Teoría: endosimbiosis seriada</value>
+        </odeNavStructureProperty>
+        <odeNavStructureProperty>
+          <key>visibility</key>
+          <value>true</value>
+        </odeNavStructureProperty>
+      </odeNavStructureProperties>
+      <odePagStructures>
+        <odePagStructure>
+          <odePageId>20260303053548PAGE02</odePageId>
+          <odeBlockId>20260303053548BLK002</odeBlockId>
+          <blockName>Teoría: endosimbiosis seriada</blockName>
+          <iconName></iconName>
+          <odePagStructureOrder>1</odePagStructureOrder>
+          <odePagStructureProperties>
+            <odePagStructureProperty>
+              <key>visibility</key>
+              <value>true</value>
+            </odePagStructureProperty>
+            <odePagStructureProperty>
+              <key>teacherOnly</key>
+              <value>false</value>
+            </odePagStructureProperty>
+            <odePagStructureProperty>
+              <key>allowToggle</key>
+              <value>true</value>
+            </odePagStructureProperty>
+            <odePagStructureProperty>
+              <key>minimized</key>
+              <value>false</value>
+            </odePagStructureProperty>
+          </odePagStructureProperties>
+          <odeComponents>
+            <odeComponent>
+              <odePageId>20260303053548PAGE02</odePageId>
+              <odeBlockId>20260303053548BLK002</odeBlockId>
+              <odeIdeviceId>20260303053548IDEV02</odeIdeviceId>
+              <odeIdeviceTypeName>text</odeIdeviceTypeName>
+              <htmlView><![CDATA[<div class="exe-text-template"><div class="textIdeviceContent"><div class="exe-text-activity"><div><h2>Idea central</h2>
+<p>La <strong>endosimbiosis seriada</strong> propone que ciertas bacterias vivieron dentro de otra célula y, con el tiempo, se integraron hasta convertirse en <strong>orgánulos</strong>. No es una “fusión mágica”: es una relación biológica estable que aporta ventajas.</p>
+
+<h2>¿Qué se endosimbiontó primero?</h2>
+<ul>
+  <li><strong>Mitocondrias</strong>: a partir de bacterias aerobias (relacionadas con alfa-proteobacterias).</li>
+  <li><strong>Cloroplastos</strong>: a partir de cianobacterias fotosintéticas.</li>
+</ul>
+
+<h2>Esquema</h2>
+<figure class="exe-figure exe-image position-center license-CC-BY-SA" style="width: 900px;"><img src="{{context_path}}/endosimbiosis_1bach/01_endosimbiosis_mitocondria.png" alt="Esquema de endosimbiosis: origen de mitocondrias" width="900" height="579" /><figcaption class="figcaption"><span class="author">Juanjo de Haro</span>. <a href="https://es.wikipedia.org/wiki/Teor%C3%ADa_endosimb%C3%B3tica" target="_blank" class="title" rel="noopener"><em>Esquema didáctico basado en la teoría endosimbiótica</em></a> <span class="license"><span class="sep">(</span><a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license nofollow noopener" target="_blank" title="Creative Commons BY-SA 4.0">CC BY-SA 4.0</a><span class="sep">)</span></span></figcaption></figure>
+<p><strong>Clave para 1º Bach:</strong> la ventaja del huésped es obtener más energía (respiración) y, en otros linajes, la capacidad de fotosintetizar.</p>
+<p class="clearfix"></p></div></div></div></div>]]></htmlView>
+              <jsonProperties><![CDATA[{"ideviceId":"20260303053548IDEV02","textInfoDurationInput":"","textInfoDurationTextInput":"Duración","textInfoParticipantsInput":"","textInfoParticipantsTextInput":"Agrupamiento","textTextarea":"<h2>Idea central</h2>\n<p>La <strong>endosimbiosis seriada</strong> propone que ciertas bacterias vivieron dentro de otra célula y, con el tiempo, se integraron hasta convertirse en <strong>orgánulos</strong>. No es una “fusión mágica”: es una relación biológica estable que aporta ventajas.</p>\n\n<h2>¿Qué se endosimbiontó primero?</h2>\n<ul>\n  <li><strong>Mitocondrias</strong>: a partir de bacterias aerobias (relacionadas con alfa-proteobacterias).</li>\n  <li><strong>Cloroplastos</strong>: a partir de cianobacterias fotosintéticas.</li>\n</ul>\n\n<h2>Esquema</h2>\n<figure class=\"exe-figure exe-image position-center license-CC-BY-SA\" style=\"width: 900px;\"><img src=\"{{context_path}}/endosimbiosis_1bach/01_endosimbiosis_mitocondria.png\" alt=\"Esquema de endosimbiosis: origen de mitocondrias\" width=\"900\" height=\"579\" /><figcaption class=\"figcaption\"><span class=\"author\">Juanjo de Haro</span>. <a href=\"https://es.wikipedia.org/wiki/Teor%C3%ADa_endosimb%C3%B3tica\" target=\"_blank\" class=\"title\" rel=\"noopener\"><em>Esquema didáctico basado en la teoría endosimbiótica</em></a> <span class=\"license\"><span class=\"sep\">(</span><a href=\"https://creativecommons.org/licenses/by-sa/4.0/\" rel=\"license nofollow noopener\" target=\"_blank\" title=\"Creative Commons BY-SA 4.0\">CC BY-SA 4.0</a><span class=\"sep\">)</span></span></figcaption></figure>\n<p><strong>Clave para 1º Bach:</strong> la ventaja del huésped es obtener más energía (respiración) y, en otros linajes, la capacidad de fotosintetizar.</p>","textFeedbackInput":"Show Feedback","textFeedbackTextarea":""}]]></jsonProperties>
+              <odeComponentsOrder>1</odeComponentsOrder>
+              <odeComponentsProperties>
+                <odeComponentsProperty>
+                  <key>visibility</key>
+                  <value>true</value>
+                </odeComponentsProperty>
+                <odeComponentsProperty>
+                  <key>teacherOnly</key>
+                  <value>false</value>
+                </odeComponentsProperty>
+              </odeComponentsProperties>
+            </odeComponent>
+          </odeComponents>
+        </odePagStructure>
+      </odePagStructures>
+    </odeNavStructure>
+
+    <odeNavStructure>
+      <odePageId>20260303053548PAGE03</odePageId>
+      <odeParentPageId></odeParentPageId>
+      <pageName>Evidencias y orgánulos</pageName>
+      <odeNavStructureOrder>3</odeNavStructureOrder>
+      <odeNavStructureProperties>
+        <odeNavStructureProperty>
+          <key>titlePage</key>
+          <value>Evidencias y orgánulos</value>
+        </odeNavStructureProperty>
+        <odeNavStructureProperty>
+          <key>visibility</key>
+          <value>true</value>
+        </odeNavStructureProperty>
+      </odeNavStructureProperties>
+      <odePagStructures>
+        <odePagStructure>
+          <odePageId>20260303053548PAGE03</odePageId>
+          <odeBlockId>20260303053548BLK003</odeBlockId>
+          <blockName>Evidencias y orgánulos</blockName>
+          <iconName></iconName>
+          <odePagStructureOrder>1</odePagStructureOrder>
+          <odePagStructureProperties>
+            <odePagStructureProperty>
+              <key>visibility</key>
+              <value>true</value>
+            </odePagStructureProperty>
+            <odePagStructureProperty>
+              <key>teacherOnly</key>
+              <value>false</value>
+            </odePagStructureProperty>
+            <odePagStructureProperty>
+              <key>allowToggle</key>
+              <value>true</value>
+            </odePagStructureProperty>
+            <odePagStructureProperty>
+              <key>minimized</key>
+              <value>false</value>
+            </odePagStructureProperty>
+          </odePagStructureProperties>
+          <odeComponents>
+            <odeComponent>
+              <odePageId>20260303053548PAGE03</odePageId>
+              <odeBlockId>20260303053548BLK003</odeBlockId>
+              <odeIdeviceId>20260303053548IDEV03</odeIdeviceId>
+              <odeIdeviceTypeName>text</odeIdeviceTypeName>
+              <htmlView><![CDATA[<div class="exe-text-template"><div class="textIdeviceContent"><div class="exe-text-activity"><div><h2>Evidencias clásicas</h2>
+<p>Mitocondrias y cloroplastos conservan rasgos típicos de bacterias. Esto apoya que proceden de <strong>endosimbiontes</strong> que pasaron a ser orgánulos.</p>
+<figure class="exe-figure exe-image position-center license-CC-BY-SA" style="width: 900px;"><img src="{{context_path}}/endosimbiosis_1bach/03_evidencias_endosimbiosis.png" alt="Infografía: evidencias de la teoría endosimbiótica" width="900" height="579" /><figcaption class="figcaption"><span class="author">Juanjo de Haro</span>. <a href="https://es.wikipedia.org/wiki/Teor%C3%ADa_endosimb%C3%B3tica" target="_blank" class="title" rel="noopener"><em>Esquema didáctico basado en la teoría endosimbiótica</em></a> <span class="license"><span class="sep">(</span><a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license nofollow noopener" target="_blank" title="Creative Commons BY-SA 4.0">CC BY-SA 4.0</a><span class="sep">)</span></span></figcaption></figure>
+<h2>Cómo explicarlo con precisión</h2>
+<ul>
+  <li>El orgánulo tiene <strong>ADN propio</strong> y parte de sus proteínas se fabrican dentro, pero muchas se codifican ya en el núcleo.</li>
+  <li>La <strong>doble membrana</strong> es coherente con un proceso de fagocitosis: una membrana del huésped y otra del endosimbionte.</li>
+  <li>La <strong>fisión binaria</strong> recuerda al modo de división bacteriano.</li>
+</ul>
+<p><strong>Advertencia didáctica:</strong> hoy mitocondrias y cloroplastos no pueden vivir de forma autónoma fuera de la célula (han perdido genes y dependen del huésped).</p>
+<p class="clearfix"></p></div></div></div></div>]]></htmlView>
+              <jsonProperties><![CDATA[{"ideviceId":"20260303053548IDEV03","textInfoDurationInput":"","textInfoDurationTextInput":"Duración","textInfoParticipantsInput":"","textInfoParticipantsTextInput":"Agrupamiento","textTextarea":"<h2>Evidencias clásicas</h2>\n<p>Mitocondrias y cloroplastos conservan rasgos típicos de bacterias. Esto apoya que proceden de <strong>endosimbiontes</strong> que pasaron a ser orgánulos.</p>\n<figure class=\"exe-figure exe-image position-center license-CC-BY-SA\" style=\"width: 900px;\"><img src=\"{{context_path}}/endosimbiosis_1bach/03_evidencias_endosimbiosis.png\" alt=\"Infografía: evidencias de la teoría endosimbiótica\" width=\"900\" height=\"579\" /><figcaption class=\"figcaption\"><span class=\"author\">Juanjo de Haro</span>. <a href=\"https://es.wikipedia.org/wiki/Teor%C3%ADa_endosimb%C3%B3tica\" target=\"_blank\" class=\"title\" rel=\"noopener\"><em>Esquema didáctico basado en la teoría endosimbiótica</em></a> <span class=\"license\"><span class=\"sep\">(</span><a href=\"https://creativecommons.org/licenses/by-sa/4.0/\" rel=\"license nofollow noopener\" target=\"_blank\" title=\"Creative Commons BY-SA 4.0\">CC BY-SA 4.0</a><span class=\"sep\">)</span></span></figcaption></figure>\n<h2>Cómo explicarlo con precisión</h2>\n<ul>\n  <li>El orgánulo tiene <strong>ADN propio</strong> y parte de sus proteínas se fabrican dentro, pero muchas se codifican ya en el núcleo.</li>\n  <li>La <strong>doble membrana</strong> es coherente con un proceso de fagocitosis: una membrana del huésped y otra del endosimbionte.</li>\n  <li>La <strong>fisión binaria</strong> recuerda al modo de división bacteriano.</li>\n</ul>\n<p><strong>Advertencia didáctica:</strong> hoy mitocondrias y cloroplastos no pueden vivir de forma autónoma fuera de la célula (han perdido genes y dependen del huésped).</p>","textFeedbackInput":"Show Feedback","textFeedbackTextarea":""}]]></jsonProperties>
+              <odeComponentsOrder>1</odeComponentsOrder>
+              <odeComponentsProperties>
+                <odeComponentsProperty>
+                  <key>visibility</key>
+                  <value>true</value>
+                </odeComponentsProperty>
+                <odeComponentsProperty>
+                  <key>teacherOnly</key>
+                  <value>false</value>
+                </odeComponentsProperty>
+              </odeComponentsProperties>
+            </odeComponent>
+          </odeComponents>
+        </odePagStructure>
+      </odePagStructures>
+    </odeNavStructure>
+
+    <odeNavStructure>
+      <odePageId>20260303053548PAGE04</odePageId>
+      <odeParentPageId></odeParentPageId>
+      <pageName>Endosimbiosis secundaria</pageName>
+      <odeNavStructureOrder>4</odeNavStructureOrder>
+      <odeNavStructureProperties>
+        <odeNavStructureProperty>
+          <key>titlePage</key>
+          <value>Endosimbiosis secundaria</value>
+        </odeNavStructureProperty>
+        <odeNavStructureProperty>
+          <key>visibility</key>
+          <value>true</value>
+        </odeNavStructureProperty>
+      </odeNavStructureProperties>
+      <odePagStructures>
+        <odePagStructure>
+          <odePageId>20260303053548PAGE04</odePageId>
+          <odeBlockId>20260303053548BLK004</odeBlockId>
+          <blockName>Endosimbiosis secundaria</blockName>
+          <iconName></iconName>
+          <odePagStructureOrder>1</odePagStructureOrder>
+          <odePagStructureProperties>
+            <odePagStructureProperty>
+              <key>visibility</key>
+              <value>true</value>
+            </odePagStructureProperty>
+            <odePagStructureProperty>
+              <key>teacherOnly</key>
+              <value>false</value>
+            </odePagStructureProperty>
+            <odePagStructureProperty>
+              <key>allowToggle</key>
+              <value>true</value>
+            </odePagStructureProperty>
+            <odePagStructureProperty>
+              <key>minimized</key>
+              <value>false</value>
+            </odePagStructureProperty>
+          </odePagStructureProperties>
+          <odeComponents>
+            <odeComponent>
+              <odePageId>20260303053548PAGE04</odePageId>
+              <odeBlockId>20260303053548BLK004</odeBlockId>
+              <odeIdeviceId>20260303053548IDEV04</odeIdeviceId>
+              <odeIdeviceTypeName>text</odeIdeviceTypeName>
+              <htmlView><![CDATA[<div class="exe-text-template"><div class="textIdeviceContent"><div class="exe-text-activity"><div><h2>Endosimbiosis secundaria (idea básica)</h2>
+<p>En algunos grupos, una célula eucariota incorporó a otra <strong>eucariota fotosintética</strong> (que ya tenía cloroplastos). Esto ayuda a explicar la diversidad de algas y algunos detalles de sus membranas.</p>
+
+<h2>Esquema (simplificado)</h2>
+<figure class="exe-figure exe-image position-center license-CC-BY-SA" style="width: 900px;"><img src="{{context_path}}/endosimbiosis_1bach/02_endosimbiosis_cloroplasto.png" alt="Esquema: origen de cloroplastos por endosimbiosis" width="900" height="579" /><figcaption class="figcaption"><span class="author">Juanjo de Haro</span>. <a href="https://es.wikipedia.org/wiki/Teor%C3%ADa_endosimb%C3%B3tica" target="_blank" class="title" rel="noopener"><em>Esquema didáctico basado en la teoría endosimbiótica</em></a> <span class="license"><span class="sep">(</span><a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license nofollow noopener" target="_blank" title="Creative Commons BY-SA 4.0">CC BY-SA 4.0</a><span class="sep">)</span></span></figcaption></figure>
+<h2>Para pensar</h2>
+<ul>
+  <li>Si hay endosimbiosis “de segunda ronda”, ¿qué esperarías observar en las membranas del cloroplasto?</li>
+  <li>¿Por qué podría ser ventajoso incorporar una célula ya fotosintética?</li>
+</ul>
+<p class="clearfix"></p></div></div></div></div>]]></htmlView>
+              <jsonProperties><![CDATA[{"ideviceId":"20260303053548IDEV04","textInfoDurationInput":"","textInfoDurationTextInput":"Duración","textInfoParticipantsInput":"","textInfoParticipantsTextInput":"Agrupamiento","textTextarea":"<h2>Endosimbiosis secundaria (idea básica)</h2>\n<p>En algunos grupos, una célula eucariota incorporó a otra <strong>eucariota fotosintética</strong> (que ya tenía cloroplastos). Esto ayuda a explicar la diversidad de algas y algunos detalles de sus membranas.</p>\n\n<h2>Esquema (simplificado)</h2>\n<figure class=\"exe-figure exe-image position-center license-CC-BY-SA\" style=\"width: 900px;\"><img src=\"{{context_path}}/endosimbiosis_1bach/02_endosimbiosis_cloroplasto.png\" alt=\"Esquema: origen de cloroplastos por endosimbiosis\" width=\"900\" height=\"579\" /><figcaption class=\"figcaption\"><span class=\"author\">Juanjo de Haro</span>. <a href=\"https://es.wikipedia.org/wiki/Teor%C3%ADa_endosimb%C3%B3tica\" target=\"_blank\" class=\"title\" rel=\"noopener\"><em>Esquema didáctico basado en la teoría endosimbiótica</em></a> <span class=\"license\"><span class=\"sep\">(</span><a href=\"https://creativecommons.org/licenses/by-sa/4.0/\" rel=\"license nofollow noopener\" target=\"_blank\" title=\"Creative Commons BY-SA 4.0\">CC BY-SA 4.0</a><span class=\"sep\">)</span></span></figcaption></figure>\n<h2>Para pensar</h2>\n<ul>\n  <li>Si hay endosimbiosis “de segunda ronda”, ¿qué esperarías observar en las membranas del cloroplasto?</li>\n  <li>¿Por qué podría ser ventajoso incorporar una célula ya fotosintética?</li>\n</ul>","textFeedbackInput":"Show Feedback","textFeedbackTextarea":""}]]></jsonProperties>
+              <odeComponentsOrder>1</odeComponentsOrder>
+              <odeComponentsProperties>
+                <odeComponentsProperty>
+                  <key>visibility</key>
+                  <value>true</value>
+                </odeComponentsProperty>
+                <odeComponentsProperty>
+                  <key>teacherOnly</key>
+                  <value>false</value>
+                </odeComponentsProperty>
+              </odeComponentsProperties>
+            </odeComponent>
+          </odeComponents>
+        </odePagStructure>
+      </odePagStructures>
+    </odeNavStructure>
+
+    <odeNavStructure>
+      <odePageId>20260303053548PAGE05</odePageId>
+      <odeParentPageId></odeParentPageId>
+      <pageName>Actividades y evaluación</pageName>
+      <odeNavStructureOrder>5</odeNavStructureOrder>
+      <odeNavStructureProperties>
+        <odeNavStructureProperty>
+          <key>titlePage</key>
+          <value>Actividades y evaluación</value>
+        </odeNavStructureProperty>
+        <odeNavStructureProperty>
+          <key>visibility</key>
+          <value>true</value>
+        </odeNavStructureProperty>
+      </odeNavStructureProperties>
+      <odePagStructures>
+        <odePagStructure>
+          <odePageId>20260303053548PAGE05</odePageId>
+          <odeBlockId>20260303053548BLK005</odeBlockId>
+          <blockName>Actividades y evaluación</blockName>
+          <iconName></iconName>
+          <odePagStructureOrder>1</odePagStructureOrder>
+          <odePagStructureProperties>
+            <odePagStructureProperty>
+              <key>visibility</key>
+              <value>true</value>
+            </odePagStructureProperty>
+            <odePagStructureProperty>
+              <key>teacherOnly</key>
+              <value>false</value>
+            </odePagStructureProperty>
+            <odePagStructureProperty>
+              <key>allowToggle</key>
+              <value>true</value>
+            </odePagStructureProperty>
+            <odePagStructureProperty>
+              <key>minimized</key>
+              <value>false</value>
+            </odePagStructureProperty>
+          </odePagStructureProperties>
+          <odeComponents>
+            <odeComponent>
+              <odePageId>20260303053548PAGE05</odePageId>
+              <odeBlockId>20260303053548BLK005</odeBlockId>
+              <odeIdeviceId>20260303053548IDEV05</odeIdeviceId>
+              <odeIdeviceTypeName>text</odeIdeviceTypeName>
+              <htmlView><![CDATA[<div class="exe-text-template"><div class="textIdeviceContent"><div class="exe-text-activity"><div><h2>Actividad 1: explicación en 5 frases</h2>
+<p>Redacta una explicación clara de la teoría usando exactamente <strong>5 frases</strong>. Debe aparecer: endosimbionte, mitocondria, cloroplasto, evidencia.</p>
+
+<h2>Actividad 2: mapa conceptual</h2>
+<ul>
+  <li>Nodos mínimos: <em>huésped</em>, <em>bacteria aerobia</em>, <em>mitocondria</em>, <em>cianobacteria</em>, <em>cloroplasto</em>, <em>evidencias</em>.</li>
+  <li>Conectores: <em>se incorpora</em>, <em>aporta</em>, <em>se integra</em>, <em>se apoya en</em>.</li>
+</ul>
+
+<h2>Actividad 3: análisis de evidencias</h2>
+<p>Elige <strong>dos</strong> evidencias y explica por qué encajan con la teoría. Añade un posible “contraargumento” y cómo se respondería.</p>
+
+<h2>Evaluación (criterios rápidos)</h2>
+<ul>
+  <li>Precisión científica (sin errores clave).</li>
+  <li>Uso correcto de evidencias.</li>
+  <li>Claridad y organización.</li>
+</ul>
+<p class="clearfix"></p></div></div></div></div>]]></htmlView>
+              <jsonProperties><![CDATA[{"ideviceId":"20260303053548IDEV05","textInfoDurationInput":"","textInfoDurationTextInput":"Duración","textInfoParticipantsInput":"","textInfoParticipantsTextInput":"Agrupamiento","textTextarea":"<h2>Actividad 1: explicación en 5 frases</h2>\n<p>Redacta una explicación clara de la teoría usando exactamente <strong>5 frases</strong>. Debe aparecer: endosimbionte, mitocondria, cloroplasto, evidencia.</p>\n\n<h2>Actividad 2: mapa conceptual</h2>\n<ul>\n  <li>Nodos mínimos: <em>huésped</em>, <em>bacteria aerobia</em>, <em>mitocondria</em>, <em>cianobacteria</em>, <em>cloroplasto</em>, <em>evidencias</em>.</li>\n  <li>Conectores: <em>se incorpora</em>, <em>aporta</em>, <em>se integra</em>, <em>se apoya en</em>.</li>\n</ul>\n\n<h2>Actividad 3: análisis de evidencias</h2>\n<p>Elige <strong>dos</strong> evidencias y explica por qué encajan con la teoría. Añade un posible “contraargumento” y cómo se respondería.</p>\n\n<h2>Evaluación (criterios rápidos)</h2>\n<ul>\n  <li>Precisión científica (sin errores clave).</li>\n  <li>Uso correcto de evidencias.</li>\n  <li>Claridad y organización.</li>\n</ul>","textFeedbackInput":"Show Feedback","textFeedbackTextarea":""}]]></jsonProperties>
+              <odeComponentsOrder>1</odeComponentsOrder>
+              <odeComponentsProperties>
+                <odeComponentsProperty>
+                  <key>visibility</key>
+                  <value>true</value>
+                </odeComponentsProperty>
+                <odeComponentsProperty>
+                  <key>teacherOnly</key>
+                  <value>false</value>
+                </odeComponentsProperty>
+              </odeComponentsProperties>
+            </odeComponent>
+          </odeComponents>
+        </odePagStructure>
+      </odePagStructures>
+    </odeNavStructure>
+
+    <odeNavStructure>
+      <odePageId>20260303053548PAGE06</odePageId>
+      <odeParentPageId></odeParentPageId>
+      <pageName>Créditos y licencias</pageName>
+      <odeNavStructureOrder>6</odeNavStructureOrder>
+      <odeNavStructureProperties>
+        <odeNavStructureProperty>
+          <key>titlePage</key>
+          <value>Créditos y licencias</value>
+        </odeNavStructureProperty>
+        <odeNavStructureProperty>
+          <key>visibility</key>
+          <value>true</value>
+        </odeNavStructureProperty>
+      </odeNavStructureProperties>
+      <odePagStructures>
+        <odePagStructure>
+          <odePageId>20260303053548PAGE06</odePageId>
+          <odeBlockId>20260303053548BLK006</odeBlockId>
+          <blockName>Créditos y licencias</blockName>
+          <iconName></iconName>
+          <odePagStructureOrder>1</odePagStructureOrder>
+          <odePagStructureProperties>
+            <odePagStructureProperty>
+              <key>visibility</key>
+              <value>true</value>
+            </odePagStructureProperty>
+            <odePagStructureProperty>
+              <key>teacherOnly</key>
+              <value>false</value>
+            </odePagStructureProperty>
+            <odePagStructureProperty>
+              <key>allowToggle</key>
+              <value>true</value>
+            </odePagStructureProperty>
+            <odePagStructureProperty>
+              <key>minimized</key>
+              <value>false</value>
+            </odePagStructureProperty>
+          </odePagStructureProperties>
+          <odeComponents>
+            <odeComponent>
+              <odePageId>20260303053548PAGE06</odePageId>
+              <odeBlockId>20260303053548BLK006</odeBlockId>
+              <odeIdeviceId>20260303053548IDEV06</odeIdeviceId>
+              <odeIdeviceTypeName>text</odeIdeviceTypeName>
+              <htmlView><![CDATA[<div class="exe-text-template"><div class="textIdeviceContent"><div class="exe-text-activity"><div><h2>Licencia del recurso</h2>
+<p>Este REA se publica con licencia <strong>CC BY-SA 4.0</strong>.</p>
+
+<h2>Autoría</h2>
+<ul>
+  <li>Autor: Juanjo de Haro (con asistencia de IA).</li>
+  <li>Materia: Biología y Geología (1º Bachillerato).</li>
+</ul>
+
+<h2>Imágenes</h2>
+<p>Las imágenes incluidas en <code>content/resources/endosimbiosis_1bach/</code> son <strong>elaboración propia</strong> (esquemas didácticos) y se licencian como CC BY-SA 4.0.</p>
+
+<h2>Fuentes de consulta (para ampliar)</h2>
+<ul>
+  <li><a href="https://es.wikipedia.org/wiki/Teor%C3%ADa_endosimb%C3%B3tica" target="_blank" rel="noopener">Teoría endosimbiótica (Wikipedia) (nueva ventana)</a></li>
+  <li><a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="license noopener">Creative Commons BY-SA 4.0 (nueva ventana)</a></li>
+</ul>
+<p class="clearfix"></p></div></div></div></div>]]></htmlView>
+              <jsonProperties><![CDATA[{"ideviceId":"20260303053548IDEV06","textInfoDurationInput":"","textInfoDurationTextInput":"Duración","textInfoParticipantsInput":"","textInfoParticipantsTextInput":"Agrupamiento","textTextarea":"<h2>Licencia del recurso</h2>\n<p>Este REA se publica con licencia <strong>CC BY-SA 4.0</strong>.</p>\n\n<h2>Autoría</h2>\n<ul>\n  <li>Autor: Juanjo de Haro (con asistencia de IA).</li>\n  <li>Materia: Biología y Geología (1º Bachillerato).</li>\n</ul>\n\n<h2>Imágenes</h2>\n<p>Las imágenes incluidas en <code>content/resources/endosimbiosis_1bach/</code> son <strong>elaboración propia</strong> (esquemas didácticos) y se licencian como CC BY-SA 4.0.</p>\n\n<h2>Fuentes de consulta (para ampliar)</h2>\n<ul>\n  <li><a href=\"https://es.wikipedia.org/wiki/Teor%C3%ADa_endosimb%C3%B3tica\" target=\"_blank\" rel=\"noopener\">Teoría endosimbiótica (Wikipedia) (nueva ventana)</a></li>\n  <li><a href=\"https://creativecommons.org/licenses/by-sa/4.0/\" target=\"_blank\" rel=\"license noopener\">Creative Commons BY-SA 4.0 (nueva ventana)</a></li>\n</ul>","textFeedbackInput":"Show Feedback","textFeedbackTextarea":""}]]></jsonProperties>
+              <odeComponentsOrder>1</odeComponentsOrder>
+              <odeComponentsProperties>
+                <odeComponentsProperty>
+                  <key>visibility</key>
+                  <value>true</value>
+                </odeComponentsProperty>
+                <odeComponentsProperty>
+                  <key>teacherOnly</key>
+                  <value>false</value>
+                </odeComponentsProperty>
+              </odeComponentsProperties>
+            </odeComponent>
+          </odeComponents>
+        </odePagStructure>
+      </odePagStructures>
+    </odeNavStructure>
+  </odeNavStructures>
+</ode>

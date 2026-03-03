@@ -1,0 +1,27 @@
+<odeComponent>
+  <odePageId>__PAGE_ID__</odePageId>
+  <odeBlockId>__BLOCK_ID__</odeBlockId>
+  <odeIdeviceId>__IDEVICE_ID__</odeIdeviceId>
+  <odeIdeviceTypeName>beforeafter</odeIdeviceTypeName>
+  <htmlView>&lt;div class="beforeafter-IDevice"&gt;&lt;div class="beforeafter-version js-hidden"&gt;2&lt;/div&gt;&lt;div class="beforeafter-feedback-game"&gt;&lt;/div&gt;&lt;div class="beforeafter-instructions gameQP-instructions"&gt;&lt;p&gt;Compare las dos imagenes y deslice para ver antes y despues.&lt;/p&gt;&lt;/div&gt;&lt;div class="beforeafter-DataGame js-hidden"&gt;__DATA_GAME__&lt;/div&gt;&lt;div class="beforeafter-bns js-hidden"&gt;Su navegador no es compatible con esta actividad.&lt;/div&gt;&lt;/div&gt;</htmlView>
+  <jsonProperties>{"ideviceId":"__IDEVICE_ID__","textInfoDurationInput":"","textInfoParticipantsInput":"","textInfoDurationTextInput":"","textInfoParticipantsTextInput":"","textTextarea":"&lt;div class=\"beforeafter-IDevice\"&gt;...&lt;/div&gt;","textFeedbackInput":"","textFeedbackTextarea":""}</jsonProperties>
+  <odeComponentsOrder>1</odeComponentsOrder>
+  <odeComponentsProperties>
+    <odeComponentsProperty>
+      <key>visibility</key>
+      <value>true</value>
+    </odeComponentsProperty>
+    <odeComponentsProperty>
+      <key>teacherOnly</key>
+      <value>false</value>
+    </odeComponentsProperty>
+    <odeComponentsProperty>
+      <key>identifier</key>
+      <value/>
+    </odeComponentsProperty>
+    <odeComponentsProperty>
+      <key>cssClass</key>
+      <value/>
+    </odeComponentsProperty>
+  </odeComponentsProperties>
+</odeComponent>

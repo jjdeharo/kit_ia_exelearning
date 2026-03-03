@@ -1,0 +1,27 @@
+<odeComponent>
+  <odePageId>__PAGE_ID__</odePageId>
+  <odeBlockId>__BLOCK_ID__</odeBlockId>
+  <odeIdeviceId>__IDEVICE_ID__</odeIdeviceId>
+  <odeIdeviceTypeName>trueorfalse</odeIdeviceTypeName>
+  <htmlView>&lt;div class="exe-trueorfalse-container"&gt;&lt;div class="trueorfalse-IDevice"&gt;&lt;div class="trueorfalse-version js-hidden"&gt;2&lt;/div&gt;&lt;div class="trueorfalse-DataGame js-hidden"&gt;__DATA_GAME__&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</htmlView>
+  <jsonProperties>{"ideviceId":"__IDEVICE_ID__","questions":[{"statement":"La fotosintesis requiere luz.","answer":true,"feedback":"Correcto."}],"showFeedback":true}</jsonProperties>
+  <odeComponentsOrder>1</odeComponentsOrder>
+  <odeComponentsProperties>
+    <odeComponentsProperty>
+      <key>visibility</key>
+      <value>true</value>
+    </odeComponentsProperty>
+    <odeComponentsProperty>
+      <key>teacherOnly</key>
+      <value>false</value>
+    </odeComponentsProperty>
+    <odeComponentsProperty>
+      <key>identifier</key>
+      <value/>
+    </odeComponentsProperty>
+    <odeComponentsProperty>
+      <key>cssClass</key>
+      <value/>
+    </odeComponentsProperty>
+  </odeComponentsProperties>
+</odeComponent>

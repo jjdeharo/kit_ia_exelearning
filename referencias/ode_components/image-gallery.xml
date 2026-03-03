@@ -1,0 +1,27 @@
+<odeComponent>
+  <odePageId>__PAGE_ID__</odePageId>
+  <odeBlockId>__BLOCK_ID__</odeBlockId>
+  <odeIdeviceId>__IDEVICE_ID__</odeIdeviceId>
+  <odeIdeviceTypeName>image-gallery</odeIdeviceTypeName>
+  <htmlView>&lt;div class="exe-image-gallery-template"&gt;&lt;div class="exe-image-gallery-content"&gt;&lt;figure&gt;&lt;a href="content/resources/imagen-1.jpg"&gt;&lt;img src="content/resources/imagen-1.jpg" alt="Imagen 1" /&gt;&lt;/a&gt;&lt;figcaption&gt;Pie de imagen&lt;/figcaption&gt;&lt;/figure&gt;&lt;/div&gt;&lt;/div&gt;</htmlView>
+  <jsonProperties>{"ideviceId":"__IDEVICE_ID__","items":[{"title":"Imagen 1","image":"content/resources/imagen-1.jpg","thumbnail":"content/resources/imagen-1.jpg","caption":"Pie de imagen","alt":"Imagen 1"}],"layout":"grid","lightbox":true}</jsonProperties>
+  <odeComponentsOrder>1</odeComponentsOrder>
+  <odeComponentsProperties>
+    <odeComponentsProperty>
+      <key>visibility</key>
+      <value>true</value>
+    </odeComponentsProperty>
+    <odeComponentsProperty>
+      <key>teacherOnly</key>
+      <value>false</value>
+    </odeComponentsProperty>
+    <odeComponentsProperty>
+      <key>identifier</key>
+      <value/>
+    </odeComponentsProperty>
+    <odeComponentsProperty>
+      <key>cssClass</key>
+      <value/>
+    </odeComponentsProperty>
+  </odeComponentsProperties>
+</odeComponent>
